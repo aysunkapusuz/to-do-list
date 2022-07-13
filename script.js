@@ -11,7 +11,7 @@ let app = new function(){
                 data+= '<tr>';
                 data+='<td>'+(i+1)+'. '+this.tasks[i]+'</td>';
                 data+=<td><button onclick="app.Edit('+i+')"
-                class="btn btn-warning">Edit</button></td>  ;
+                class="btn btn-warning">Edit</button></td>   ;
                 data+= <td><button onclick="app.Delete('+i+')"
                 class="btn btn-danger">Delete</button></td> ;
                 data+= '</tr>'
@@ -23,18 +23,52 @@ let app = new function(){
     };
 
     this.Add = function (){
+        el = document.getElementById('add-to-do');
+        let task = el.value;
+        if(task){
+            this.tasks.push(task.trim());
+            el.value = '';
+            this.FetchAll();
+        }
 
     };
 
     this.Edit = function (item){
+        el = document.getElementById('edit-to-do');
+        this.el.value = this.tasks[item]
+        document.getElementById('edit-box').style.display = 'block';
+        self=this;
+
+        document.getElementById('save-edit').onsubmit = function (){
+            let task = el.value;
+            if(task){
+                self.tasks.splice(item, 1, task.trim());
+                self.FetchAll();
+                CloseInput();
+            }
+        }
 
     };
 
     this.Delete = function (item){
+        this.tasks.splice(item, 1)
+        this.FetchAll();
 
     };
 
+
     this.Count = function (data){
+        let el = document.getElementById('counter');
+        let name = 'Tasks';
+        if(data){
+            if(data == 1){
+                name = 'Task';
+            }
+            el.innerHTML = data+' '+name;
+        }
+        else{
+            el.innerHTML = "No "+ name;
+        }
 
     };
 }
