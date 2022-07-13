@@ -12,14 +12,30 @@
     <div class="title">
         <h1>Things To Do</h1>
     </div>
-    <fiv class="form">
+    <div class="form">
         <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
             <input type="text" id="add-to-do" placeholder="Things To-Do">
             <input type="submit" value="Add" class="btn btn-primary">
-            <p>You Have:</p>
-            <p id="counter"></p>
+            
         </form>
-    </fiv>
+        <p>You Have:</p>
+        <p id="counter"></p>
+        <table>
+            <tr class="to-do">
+                <th><h3>To-Do:</h3></th>
+            </tr>
+            <tbody id="tasks">   
+            </tbody>
+        </table>
+    </div>
+
+    <div id="added-box" role="aria-hidden">
+        <form action="javascript:void(0)" method="POST" id="save-edit">
+            <input type="text" id="edit-to-do">
+            <input type="submit" value="Save" class="btn btn-success">
+            <a href="" onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
 
 
     <script src="script.js"></script>
