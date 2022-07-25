@@ -2,12 +2,17 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    
+}
+body{
+    background: linear-gradient(135deg, orange 60%, cyan);
 }
 
 .title{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    color: aquamarine;
 }
 
 .form{
@@ -23,10 +28,11 @@ input [type = 'submit'] , button , [aria-label]{
     display: none;
     max-width: 80%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 td{
-    background-color: aliceblue;
+    background-color:rgb(252, 166, 6);
+    
     padding-right: 10px;
     text-align: left;
 }
