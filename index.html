@@ -7,7 +7,6 @@
     <title>Things To Do</title>
     <link rel="stylesheet" href="style.css">
     
-    
 </head>
 <body>
     <div class="title">
@@ -15,15 +14,15 @@
     </div>
     <div class="form">
         <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
-            <input type="text" id="add-to-do" placeholder="Things To-Do">
+            <input type="text" id="add-to-do" placeholder="type here">
             <input type="submit" value="Add" class="btn btn-primary">
-            
         </form>
+        <br>
         <p>You Have:</p>
         <p id="counter"></p>
         <table>
             <tr class="to-do">
-                <th><h3>To-Do:</h3></th>
+                <th><h3>To-Do List:</h3></th>
             </tr>
             <tbody id="tasks">   
             </tbody>
