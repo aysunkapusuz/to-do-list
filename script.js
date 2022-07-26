@@ -10,8 +10,8 @@ let app = new function(){
             for(i=0; i<this.tasks.length; i++){
                 data += '<tr>';
                 data +='<td>'+(i+1)+". " + this.tasks[i]+'</td>';
-                data +='<td><button onclick="app.Edit('+i+')" class="btn btn-warning">Edit</button></td>'  ;
-                data +='<td><button onclick="app.Delete('+i+')" class="btn btn-danger">Delete</button></td>' ;
+                data +='<td><button onclick="app.Edit('+i+')" id="yellow">Edit</button></td>'  ;
+                data +='<td><button onclick="app.Delete('+i+')" id="red" >Delete</button></td>' ;
                 data += '</tr>'
             }
         }
@@ -75,3 +75,4 @@ app.FetchAll();
 function CloseInput (){
     document.getElementById('edit-box').style.display = 'none'
 }
+document.getElementById("yellow").style.backgroundColor  = "yellow"
