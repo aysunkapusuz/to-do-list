@@ -5,7 +5,10 @@
     
 }
 body{
-    background: linear-gradient(135deg, orange 60%, cyan);
+    
+    background: linear-gradient(135deg, orange 60%, cyan); 
+
+    background-color: blue;
 }
 
 .title{
@@ -26,6 +29,11 @@ table{
         margin-top: 20px;
       
 }
+input[type=submit]{
+    background-color: rgb(50, 189, 29);
+    color: white;
+    cursor: pointer;
+}
 
 input [type = 'submit'] , button , [aria-label]{
     cursor: pointer;
@@ -34,9 +42,10 @@ input [type = 'submit'] , button , [aria-label]{
     display: none;
     max-width: 80%;
     margin: auto;
+    text-align: center;
+    margin-top: 20px;
 }
 td{
-    background-color:rgb(252, 166, 6);
     padding-right: 10px;
     text-align: left;
 }
