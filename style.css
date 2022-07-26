@@ -28,11 +28,9 @@ input [type = 'submit'] , button , [aria-label]{
     display: none;
     max-width: 80%;
     margin: auto;
-    margin-top: 20px;
 }
 td{
     background-color:rgb(252, 166, 6);
-    
     padding-right: 10px;
     text-align: left;
 }
