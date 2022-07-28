@@ -62,10 +62,10 @@ let app = new function(){
             if(data == 1){
                 name = 'Task';
             }
-            el.innerHTML = data+' '+name;
+            el.innerHTML = `${data} ${name}`
         }
-        else{
-            el.innerHTML = "No "+ name;
+        else{ 
+            el.innerHTML = `No ${name}`
         }
 
     };
@@ -74,5 +74,4 @@ app.FetchAll();
 
 function CloseInput (){
     document.getElementById('edit-box').style.display = 'none'
-    document.getElementById("yellow").style.backgroundColor  = "yellow"
 }

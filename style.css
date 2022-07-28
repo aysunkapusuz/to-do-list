@@ -47,9 +47,6 @@ input [type = 'submit'] , button , [aria-label]{
     margin-top: 20px;
 }
 td{
-    padding-right: 10px;
+    
     text-align: left;
-}
-.to-do {
-    background: transparent !important;
 }
