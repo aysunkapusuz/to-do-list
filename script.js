@@ -21,7 +21,7 @@ let app = new function(){
     };
 
     this.Add = function (){
-        el = document.getElementById('add-to-do');
+        el = document.getElementById('add');
         let task = el.value;
         if(task){
             this.tasks.push(task.trim());
@@ -32,7 +32,7 @@ let app = new function(){
     };
 
     this.Edit = function (item){
-        el = document.getElementById('edit-to-do');
+        el = document.getElementById('edit');
         this.el.value = this.tasks[item]
         document.getElementById('edit-box').style.display = 'block';
         self=this;
