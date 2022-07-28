@@ -74,5 +74,5 @@ app.FetchAll();
 
 function CloseInput (){
     document.getElementById('edit-box').style.display = 'none'
+    document.getElementById("yellow").style.backgroundColor  = "yellow"
 }
-document.getElementById("yellow").style.backgroundColor  = "yellow"
