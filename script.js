@@ -10,7 +10,7 @@ let app = new function(){
             for(i=0; i<this.tasks.length; i++){
                 data += '<tr>';
                 data +='<td>'+(i+1)+". " + this.tasks[i]+'</td>';
-                data +='<td><button onclick="app.Edit('+i+')" style="background-color:yellow; color:white;">Edit</button></td>'  ;
+                data +='<td><button onclick="app.Edit('+i+')" style="background-color:rgb(146, 146, 9); color:white;">Edit</button></td>'  ;
                 data +='<td><button onclick="app.Delete('+i+')" style="background-color:red; color:white;">Delete</button></td>' ;
                 data += '</tr>'
             }
